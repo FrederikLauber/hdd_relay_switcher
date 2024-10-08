@@ -1,0 +1,15 @@
+[package]
+name = "hdd_relay_switchers"
+version = "0.2.0"
+edition = "2024"
+
+[[bin]]
+name = "hdds_on"
+path = "../src/hdds_on.rs"
+
+[dependencies]
+hidapi = "2.6.3"
+
+[build-dependencies]
+windows_exe_info = "0.5.2"
+camino = "1.1.10"
