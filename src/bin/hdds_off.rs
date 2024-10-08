@@ -10,10 +10,8 @@ const PID: u16 = 0x2007;
 
 
 fn main() {
-    // Initialize the HID API
     let api = HidApi::new().expect("Failed to create HID API instance");
 
-    // Example: Switch relays 1-4 on and off with a 2-second interval
     let device = api.open(VID, PID).ok().expect("Failed to open device");
     device.write(&R1_OFF).expect("Failed to write buffer");
     device.write(&R2_OFF).expect("Failed to write buffer");
