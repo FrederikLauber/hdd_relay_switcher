@@ -1,0 +1,16 @@
+[package]
+name = "hidapi_test"
+version = "0.1.0"
+edition = "2021"
+
+
+[[bin]]
+name = "hdds_on"
+src = "src/on.rs"
+
+[[bin]]
+name = "hdds_off"
+src = "src/off.rs"
+
+[dependencies]
+hidapi = "1.5.0"
